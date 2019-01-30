@@ -2,7 +2,7 @@ public class Runner {
     public static void main(String[] args){
         SortCompetition team8= new Team1SortCompetition();
         int[] randIntArr= randomIntsArr(10000);
-        String[] randStringArr= ranStringArr(10000,5);
+        String[] stringArr = challengeTwo.randString(10000, 5);
 
         System.out.println("Unsorted");
         printArr(randIntArr);
