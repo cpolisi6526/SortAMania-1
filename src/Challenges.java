@@ -1,5 +1,6 @@
 public class Challenges extends SortCompetition {
     public static int challengeOne(int[] arr){
+        int medianInd = arr.length/2;
 
     }
 
