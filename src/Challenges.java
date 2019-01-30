@@ -1,4 +1,7 @@
 public class Challenges extends SortCompetition {
+    public static int challengeOne(int[] arr){
+
+    }
 
     public static int challengeFour(int[][] arr){
        /// Data Set - a multi-dimensional array int[1000][1000] all elements are random integers between 0-10000
