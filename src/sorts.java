@@ -36,10 +36,26 @@ public class sorts {
         }
     }
 
+<<<<<<< Updated upstream
     public static int findMed(int[] arr){
         int med= arr.length/2;
         med= arr[med];
         return med;
+=======
+
+    //Bubble Sort for challenge 2
+    public static void bubbleSort2(String[] arr) {
+        int count = 1;
+        while (count != 0) {
+            count = 0;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i].compareTo(arr[i+1]) <= 0) {
+                    stringSwap(arr, i, i + 1);
+                    count++;
+                }
+            }
+        }
+>>>>>>> Stashed changes
     }
 
 
