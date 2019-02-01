@@ -2,7 +2,7 @@ public class sorts {
     public static void selection(int[] arr) {
         int index = 0;
         for (int i = 0; i < arr.length; i++) {
-            index = sortingUtil.min(arr, i);
+            index = min(arr, i);
             if (arr[i] > arr[index]) {
                 sortingUtil.swap(arr, i, index);
             }
@@ -10,7 +10,7 @@ public class sorts {
     }
 
     public static void insertion(int[] arr) {
-        int min=sortingUtil.min(arr,0);
+        int min=min(arr,0);
         sortingUtil.swap(arr,0,min);
         for(int i: arr){
             for(int j=1;j<arr.length;j++){
@@ -36,12 +36,12 @@ public class sorts {
         }
     }
 
-///<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public static int findMed(int[] arr){
         int med= arr.length/2;
         med= arr[med];
         return med;
-///=======
+=======
 
     //Bubble Sort for challenge 2
     public static void bubbleSort2(String[] arr) {
