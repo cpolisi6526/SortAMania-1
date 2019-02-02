@@ -115,7 +115,7 @@ public class sortingUtil {
     }
 
     //method to generate an array of random strings
-    public String[] randomStringArr(int num, int length) {
+    public static String[] randomStringArr(int num, int length) {
         String[] arr = new String[num];
         while (num > 0) {
             int i = 0;

@@ -1,5 +1,15 @@
 public class Runner {
     public static void main(String[] args){
+        //testing out code for challenge two
+        //String[] stringArr  = {"hello","why","challenge","school","sleep","why","zebra","why","and","why","and","i","am","tired"};
+       // Challenges f = new Challenges();
+        //System.out.println(f.challengeTwo(stringArr, "why"));
+        //System.out.println("printing the String array.");
+        //for(int i=0;i<stringArr.length;i++){
+            //System.out.print(stringArr[i]+" ");
+        //}
+
+
         SortCompetition team8= new Team1SortCompetition();
         int[] randIntArr= randomIntsArr(10000);
         String[] stringArr = challengeTwo.randString(10000, 5);
