@@ -61,8 +61,11 @@ public class Challenges extends SortCompetition {
         for(int row=0; row<arr.length; row++){
             sorts.selection(arr[row]);
         }
-        return 1;
-
+        int[] medians= new int[arr.length];
+        for (int row=0; row<arr.length; row++){
+            sorts.findMed(arr[row]);
+        }
+        return(sorts.findMed(medians));
     }
     public int challengeFive(Comparable[] arr, Comparable query){
         return 1;

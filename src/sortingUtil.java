@@ -142,6 +142,15 @@ public class sortingUtil {
         return minInd;
     }
 
+    public static int[] ranIntArr(int count){
+        int[] arr = new int[count];
+        for (int i = 0; i < count; i++) {
+            arr[i] = (int) (Math.random() * 10);
+        }
+        return arr;
+    }
+
+
 }
 
 
