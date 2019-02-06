@@ -3,7 +3,7 @@ public class Challenges extends SortCompetition {
 
     public int challengeOne(int[] arr){
         int medianInd = arr.length/2;
-        sorts.bubbleSort(arr);
+        sorts.selection(arr);
         return arr[medianInd];
 
     }
