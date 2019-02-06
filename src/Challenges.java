@@ -68,8 +68,21 @@ public class Challenges extends SortCompetition {
         return(sorts.findMed(medians));
     }
     public int challengeFive(Comparable[] arr, Comparable query){
+      //  challengeFive: Mystery Sort and Search
+      //  Data Set - an array of 10,000 objects that implement the comparable interface
+        //Task: Sort the array by the compareTo method, and determine if it contains the element given. Return the position of the object, or -1 if not found.
+//        Hint: You must use a stable sort for this challenge, equivalent objects should stay in the same order.
+
         return 1;
 
+    }
+
+    public Thingy[] randomThingArr(int num){
+        Thingy[] things= new Thingy[num];
+        for(int i=0; i<num;i++){
+            things[i]= new Thingy();
+        }
+        return things;
     }
     public String greeting(){
         return "hello";
