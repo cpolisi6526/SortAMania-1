@@ -17,19 +17,17 @@ public class Runner {
     }
     public static void main(String[] args){
         //testing out code for challenge two
-        //String[] stringArr  = {"hello","why","challenge","school","sleep","why","zebra","why","and","why","and","i","am","tired"};
-       // Challenges f = new Challenges();
-        //System.out.println(f.challengeTwo(stringArr, "why"));
-        //System.out.println("printing the String array.");
-        //for(int i=0;i<stringArr.length;i++){
-            //System.out.print(stringArr[i]+" ");
-        //}
+        team8sortingCompetition team8= new team8sortingCompetition();
+        String[] stringArr  = {"hello","why","challenge","school","sleep","why","zebra","why","and","why","and","i","am","tired"};
+
+        System.out.println(team8.challengeTwo(stringArr, "why"));
+        System.out.println("printing the String array.");
+        for(int i=0;i<stringArr.length;i++){
+            System.out.print(stringArr[i]+" ");
+        }
 
         /// rand...Arr creates a random arr for each medium
-
-        SortCompetition team8= new Team1SortCompetition();
         int[] randIntArr= sortingUtil.randIntArr(10000);
-        String[] stringArr = challengeTwo.randString(10000, 5);
 
         System.out.println("Unsorted");
         printArr(randIntArr);
