@@ -13,6 +13,12 @@ public class sortingUtil {
         arr[b] = temp;
     }
 
+    public static void swap(Comparable[] arr, int a, int b) {
+        Comparable temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+
     //swap method for doubles
     public static void swap(double[] arr, int a, int b) {
         double temp = arr[a];

@@ -36,6 +36,7 @@ public class sorts {
         }
     }
 
+
     public static int findMed(int[] arr) {
         int med = arr.length / 2;
         med = arr[med];

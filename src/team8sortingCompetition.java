@@ -63,11 +63,12 @@ public class team8sortingCompetition extends SortCompetition {
         }
         int[] medians= new int[arr.length];
         for (int row=0; row<arr.length; row++){
-            sorts.findMed(arr[row]);
+            medians[row]=sorts.findMed(arr[row]);
         }
         return(sorts.findMed(medians));
     }
     public int challengeFive(Comparable[] arr, Comparable query){
+
         return 1;
 
     }
