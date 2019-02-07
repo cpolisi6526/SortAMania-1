@@ -68,8 +68,23 @@ public class team8sortingCompetition extends SortCompetition {
         return(sorts.findMed(medians));
     }
     public int challengeFive(Comparable[] arr, Comparable query){
+        comparableSort(arr);
+        int max =arr.length-1;
+        int min = 0;
+        for (int i = (min+max)/2; min<=max;i=(min+max)/2 ) {
+            //if (arr[i - 1].compareTo(query)==0&& arr[i].compareTo(query)==0 && i!=0){
+            // return i-1;
+            //}
+            if (arr[i].compareTo(query) == 0) {
+                return i;
+            } else if (arr[i].compareTo(query) > 0) {
+                max = i - 1;
+            } else if (arr[i].compareTo(query) < 0) {
+                min = i + 1;
+            }
+        }
+        return -1;
 
-        return 1;
 
     }
     public String greeting(){
@@ -287,17 +302,25 @@ public class team8sortingCompetition extends SortCompetition {
             }
         }
     }
-    //public Thingy[] comparableSort(Thingy[] arr){
-       // for(int i=0; i<arr.length; i++){
-            //for(int j=1; j<arr.length; j++){
-                //if(arr[j-1].compareTo(Thingy arr[j])){
-                    //Thingy temp = arr[j - 1];
-                   // arr[j - 1] = arr[j];
-                    //arr[j] = temp;
-               // }
-            //}
-        //}
-       // return arr;
-   // }
+    public Comparable[] comparableSort(Comparable[] arr){
+        for(int i=0; i<arr.length; i++){
+            for(int j=1; j<arr.length; j++){
+                if(arr[j-1].compareTo(arr[j])>0){
+                    Comparable temp = arr[j - 1];
+                    arr[j - 1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+    //creating a thingy array
+    public Thingy[] randomThingArr(int num){
+        Thingy[] things = new Thingy[num];
+        for(int i=0; i<num; i++){
+            things[i]= new Thingy();
+        }
+        return things;
+    }
 
 }

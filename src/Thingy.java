@@ -14,4 +14,9 @@ public class Thingy implements Comparable<Thingy> {
         }
         return -1;
     }
+    public String toString(){
+        String str = "";
+        str+=this.value;
+        return str;
+    }
 }
